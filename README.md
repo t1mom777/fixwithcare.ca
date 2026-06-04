@@ -16,4 +16,4 @@ Deploy the repository as a Dockerfile application. The container serves the site
 
 ## Contact details
 
-The current estimate form opens an email draft to `info@fixwithcare.ca`. Replace this address if a different inbox is preferred.
+The estimate form posts requests to `iva42197874@gmail.com`, and the public contact phone number is `587-437-9115`.

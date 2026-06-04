@@ -12,20 +12,3 @@ nav.addEventListener("click", () => {
 });
 
 document.querySelector("#year").textContent = new Date().getFullYear();
-
-document.querySelector("#estimate-form").addEventListener("submit", (event) => {
-  event.preventDefault();
-  const data = new FormData(event.currentTarget);
-  const subject = `Estimate request: ${data.get("service")}`;
-  const body = [
-    `Name: ${data.get("name")}`,
-    `Email: ${data.get("email")}`,
-    `Phone: ${data.get("phone") || "Not provided"}`,
-    `Service: ${data.get("service")}`,
-    "",
-    "Project details:",
-    data.get("message"),
-  ].join("\n");
-
-  window.location.href = `mailto:info@fixwithcare.ca?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-});
