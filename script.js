@@ -14,7 +14,7 @@ nav?.addEventListener("click", () => {
 document.querySelector("#year").textContent = new Date().getFullYear();
 
 const revealTargets = document.querySelectorAll(
-  ".section-heading, .service-card, .why-list > div, .steps article, .estimate-form"
+  ".section-heading, .service-card, .why-list > div, .steps article, .estimate-form, .hero-metrics > div"
 );
 
 if ("IntersectionObserver" in window) {
